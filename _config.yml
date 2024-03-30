@@ -9,39 +9,40 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Shanghai
-
+timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Dongeun's coding blog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: 안녕하세요 이동은입니다. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  휴학생 공부 일기.. 많은 관심 부탁드립니다. 
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://22000510.github.io"
 
 github:
-  username: github_username # change to your github username
+  username: 22000510 # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+#twitter:
+  #username: moving_silver__ # change to your twitter username
+instagram:
+  username: moving_silver__
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Dongeun Lee
+  email: wp4106@naver.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    #https://twitter.com/ # change to your twitter homepage
+    - https://github.com/22000510 # change to your github homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://www.instagram.com/moving_silver__
     # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
