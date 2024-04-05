@@ -9,11 +9,11 @@ tag: [파이썬, 메크로, 자동, 코딩]
 <br>
 파이썬 selenium 코드를 이용해서 네이버 자동로그인 하는 방법을 알아보도록 하겠습니다.<br>
 어렵지 않은 코드지만 네이버 자동 로그인과 자동입력 방지 문자 안나오도록 하는 법에 대해 포스팅 해보겠습니다.
-<br>
+
 (저는 jupyter notebook 이용해서 연습했습니다.)
 <br>
 <br>
-우선 제 코드입니다.(급하신 분들을 위해..)
+우선 제가 작성한 코드입니다.(급하신 분들을 위해..)
 
     from selenium import webdriver
     from selenium.webdriver.common.by import By
