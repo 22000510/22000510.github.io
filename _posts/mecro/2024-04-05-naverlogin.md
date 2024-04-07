@@ -70,7 +70,7 @@ from과 import를 입력 해주어야 웹드라이버와 By, Key 등의 기능�
     driver.get('https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/')
     driver.implicitly_wait(5)
 
-드라이버를 크롬으로 입력해주고 "driver = webdriver.Chorome", 가고자 하는 url을 get 안에 넣어줍니다. "drivere.get(가고자하는 url)" <br>
+드라이버를 크롬으로 입력해주고 "driver = webdriver.Chrome", 가고자 하는 url을 get 안에 넣어줍니다. "drivere.get(가고자하는 url)" <br>
 저는 네이버 로그인 창을 url로 지정해주었습니다.<br>
 "driver.implicitly_wait(5)" 이 코드는 페이지가 뜰때 까지 기다리기 위한 코드입니다.
 
