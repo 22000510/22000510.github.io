@@ -78,7 +78,8 @@ from과 import를 입력 해주어야 웹드라이버와 By, Key 등의 기능�
 
 먼저 아이디 입력하는 칸의 id가 어떻게 할당되는지 알아봐야 합니다. <br>
 
-<img src="https://private-user-images.githubusercontent.com/82192901/319904565-13e8b043-3085-40f6-9458-9ce225760be0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTIzMDQxMTMsIm5iZiI6MTcxMjMwMzgxMywicGF0aCI6Ii84MjE5MjkwMS8zMTk5MDQ1NjUtMTNlOGIwNDMtMzA4NS00MGY2LTk0NTgtOWNlMjI1NzYwYmUwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDA1VDA3NTY1M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY2NGM3NDE0ZTY1NDMxNzNlNjU5MDA2YmIzNjk0ZjVlOGMxYTk0MTYyNmQ1MjhiMzk1M2RmMmQzYWQxYmZiMmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.IYcemOyY5NoAkwV9QlC1KtSO426Zw-X6OOzMoL3fucQ" width="100%" height="100%" title="px(픽셀) 크기 설정" alt="screen"></img><br>
+<img src="https://github.com/22000510/22000510.github.io/assets/82192901/2ab74f2b-8219-4e4b-9503-87670c33fc8d
+" width="100%" height="100%" title="px(픽셀) 크기 설정" alt="screen"></img><br>
 
 네이버 로그인 페이지 창을 열어 f12키를 눌러줍니다.<br>
 위의 사진에 파란색으로 동그라미 쳐진 부분을 클릭 해주시면 마우스를 올려놓은 곳이 어떻게 작성되어져 있는지 확인 가능합니다.<br>
