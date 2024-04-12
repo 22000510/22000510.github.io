@@ -13,9 +13,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Dongeun's coding blog # the main title
+title: Coding Dongeun # the main title
 
-tagline: 안녕하세요 이동은입니다. # it will display as the sub-title
+tagline: Coding Dongeun.. 줄여서 dingdong.. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   휴학생 공부 일기.. 많은 관심 부탁드립니다. 
