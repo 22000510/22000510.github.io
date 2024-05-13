@@ -37,7 +37,7 @@ tag: [파이썬, 메크로, 자동, 코딩]
     driver.find_element(By.ID, 'log.login').click()
     driver.implicitly_wait(5)
 
-## 과정 설명
+### 과정 설명
 
 #### 1. selenium 모듈과 webdriver 설치
 
