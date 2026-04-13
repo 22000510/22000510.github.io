@@ -34,10 +34,10 @@ collections:
         name: categories
         widget: list
         required: false
-        field: { label: Category, widget: string }
+        field: { label: Category, name: category, widget: string }
       - label: Tag
         name: tag
         widget: list
         required: false
-        field: { label: Tag, widget: string }
+        field: { label: Tag, name: tag_item, widget: string }
       - { label: Body, name: body, widget: markdown }
