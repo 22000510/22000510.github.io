@@ -20,9 +20,8 @@ backend:
   base_url: https://api.netlify.com
   auth_endpoint: auth
   # 호스트만 (https·슬래시 없음).
-  # 팝업에 "Authorized"만 보이고 안 닫히면: OAuth는 성공했지만 부모 창으로 토큰 전달(postMessage)이 실패한 경우가 많음
-  # (GitHub 로그인 페이지를 거치며 window.opener 가 끊김). 대응: 아래 site_domain 과 같은 Netlify URL에서 /admin 을 연 뒤
-  # 로그인 재시도 · 팝업 허용 · 광고/보안 확장 끄기 · 다른 브라우저 시도.
+  # Netlify 사이트가 "OAuth용 placeholder"만 있으면 /admin 은 404 — 저장소를 Netlify에 연결해 Jekyll 빌드(netlify.toml)해야 함.
+  # 팝업이 "Authorized"에서 멈추면: postMessage/opener 이슈. 같은 Netlify URL의 /admin 에서 로그인 재시도 등.
   site_domain: ephemeral-creponne-6bdb92.netlify.app
 
 media_folder: assets/img

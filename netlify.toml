@@ -1,0 +1,9 @@
+# Netlify에 이 저장소를 연결하면 GitHub Actions와 동일하게 Jekyll 사이트가 배포됩니다.
+# (지금까지는 OAuth만 쓰려고 만든 placeholder 페이지만 있어서 /admin 이 404였을 수 있습니다.)
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  RUBY_VERSION = "3.2"
