@@ -1,0 +1,43 @@
+# Decap CMS — https://decapcms.org/docs/github-backend/
+# GitHub 로그인: GitHub OAuth 앱의 Authorization callback URL을
+#   https://api.netlify.com/auth/done
+# 로 두고, Netlify 사이트 → Site configuration → Access & security → OAuth 에서
+# GitHub Provider에 Client ID / Client Secret 을 등록합니다.
+
+backend:
+  name: github
+  repo: 22000510/22000510.github.io
+  branch: main
+
+media_folder: assets/img
+public_folder: /assets/img
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: post
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - label: Publish date
+        name: date
+        widget: datetime
+        date_format: YYYY-MM-DD
+        time_format: HH:mm:ss
+        format: YYYY-MM-DD HH:mm:ss Z
+        picker_utc: false
+      - label: Categories
+        name: categories
+        widget: list
+        required: false
+        field: { label: Category, widget: string }
+      - label: Tag
+        name: tag
+        widget: list
+        required: false
+        field: { label: Tag, widget: string }
+      - { label: Body, name: body, widget: markdown }
