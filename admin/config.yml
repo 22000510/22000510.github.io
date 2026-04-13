@@ -117,3 +117,13 @@ collections:
     extension: md
     format: frontmatter
     fields: *post_fields
+
+  - name: posts_DatabaseSystem
+    label: "Database System"
+    label_singular: post
+    folder: _posts/DatabaseSystem
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    fields: *post_fields
