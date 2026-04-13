@@ -27,16 +27,17 @@ backend:
 media_folder: assets/img
 public_folder: /assets/img
 
+# Jekyll 글이 _posts/하위폴더/에만 있어서, 폴더마다 컬렉션을 둡니다. fields 는 YAML 앵커(*post_fields)로 공유.
 collections:
-  - name: posts
-    label: Posts
+  - name: posts_ccjava
+    label: "C / C++ / Java"
     label_singular: post
-    folder: _posts
+    folder: "_posts/c,c++,java"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     extension: md
     format: frontmatter
-    fields:
+    fields: &post_fields
       - { label: Title, name: title, widget: string }
       - label: Publish date
         name: date
@@ -62,3 +63,43 @@ collections:
           name: tag_item
           widget: string
       - { label: Body, name: body, widget: markdown }
+
+  - name: posts_data_structure
+    label: Data structure
+    label_singular: post
+    folder: _posts/data_structure
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    fields: *post_fields
+
+  - name: posts_unity
+    label: Unity
+    label_singular: post
+    folder: _posts/Unity
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    fields: *post_fields
+
+  - name: posts_bci
+    label: BCI
+    label_singular: post
+    folder: _posts/BCI
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    fields: *post_fields
+
+  - name: posts_mecro
+    label: Mecro
+    label_singular: post
+    folder: _posts/mecro
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    fields: *post_fields
