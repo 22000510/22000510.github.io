@@ -1,13 +1,24 @@
 # Decap CMS — https://decapcms.org/docs/github-backend/
-# GitHub 로그인: GitHub OAuth 앱의 Authorization callback URL을
-#   https://api.netlify.com/auth/done
-# 로 두고, Netlify 사이트 → Site configuration → Access & security → OAuth 에서
-# GitHub Provider에 Client ID / Client Secret 을 등록합니다.
+#
+# GitHub Pages만 쓰는 경우(지금처럼 22000510.github.io):
+# 기본 OAuth는 Netlify(api.netlify.com)를 씁니다. Netlify에 이 사이트가 없으면
+# 로그인 직후 팝업에 "not found"가 뜹니다.
+#
+# 해결: OAuth 프록시를 하나 두고 backend.base_url 을 그 주소로 지정하세요.
+# 가이드: https://github.com/sterlingwes/decap-proxy
+#   1) GitHub → Developer settings → OAuth Apps → 콜백 URL = {프록시주소}/callback
+#   2) Cloudflare Worker에 decap-proxy 배포 후 아래 두 줄의 주석을 해제하고 URL을 맞춤
+#
+# Netlify에 같은 저장소를 연결해 호스팅하는 경우에만 Netlify OAuth 안내:
+# https://docs.netlify.com/security/oauth-provider-tokens/#using-an-authentication-provider
 
 backend:
   name: github
   repo: 22000510/22000510.github.io
   branch: main
+  # GitHub Pages + decap-proxy 배포 후 주석 해제:
+  # base_url: https://YOUR_SUBDOMAIN.workers.dev
+  # auth_endpoint: /auth
 
 media_folder: assets/img
 public_folder: /assets/img
