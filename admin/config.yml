@@ -17,7 +17,9 @@ backend:
   name: github
   repo: 22000510/22000510.github.io
   branch: main
-  # 호스트만 (https·슬래시 없음): location.hostname 과 같은 형태
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  # 호스트만 (https·슬래시 없음). 팝업이 안 닫히면 같은 저장소를 배포한 Netlify URL에서 /admin 열어보기
   site_domain: ephemeral-creponne-6bdb92.netlify.app
 
 media_folder: assets/img
