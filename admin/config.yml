@@ -29,6 +29,9 @@ public_folder: /assets/img
 
 # Jekyll 글이 _posts/하위폴더/에 있어 폴더마다 컬렉션을 둡니다. _posts 바로 아래 .md 는 맨 아래 "Posts (root)".
 # fields 는 YAML 앵커(*post_fields)로 공유.
+#
+# Decap 한계: _posts/새카테고리/ 같은 "폴더 자체"는 admin UI에서 만들 수 없음 → GitHub에서 폴더 만든 뒤 여기 collections 에 블록 추가.
+# 각 컬렉션의 "New …" 로는 그 폴더 안에 .md 글 파일만 생성됨(배포된 /admin 포함). 저장이 안 되면 GitHub 쓰기 권한·main 브랜치 보호 규칙 확인.
 collections:
   - name: posts_ccjava
     label: "C / C++ / Java"
