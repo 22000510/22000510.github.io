@@ -27,7 +27,8 @@ backend:
 media_folder: assets/img
 public_folder: /assets/img
 
-# Jekyll 글이 _posts/하위폴더/에만 있어서, 폴더마다 컬렉션을 둡니다. fields 는 YAML 앵커(*post_fields)로 공유.
+# Jekyll 글이 _posts/하위폴더/에 있어 폴더마다 컬렉션을 둡니다. _posts 바로 아래 .md 는 맨 아래 "Posts (root)".
+# fields 는 YAML 앵커(*post_fields)로 공유.
 collections:
   - name: posts_ccjava
     label: "C / C++ / Java"
@@ -98,6 +99,16 @@ collections:
     label: Mecro
     label_singular: post
     folder: _posts/mecro
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    fields: *post_fields
+
+  - name: posts_root
+    label: "Posts (root)"
+    label_singular: post
+    folder: _posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     extension: md
